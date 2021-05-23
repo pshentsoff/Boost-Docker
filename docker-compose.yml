@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+
+  samples:
+    build:
+      context: ./build/samples
+    container_name: python_boost_samples
+    env_file:
+      - .env
+    volumes:
+      - ./src:/var/local/samples
